@@ -30,4 +30,11 @@ public class StartUp extends AppCompatActivity
         mediaPlayer.stop();
         finish();
     }
+
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        mediaPlayer.stop();
+    }
 }
